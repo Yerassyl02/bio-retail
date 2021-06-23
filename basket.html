@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bio retail</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <!-- ===== NAV START ===== -->
+
+    <div class="menu_blurmask"></div>
+    <nav class="nav grey">
+        <div class="container">
+            <div class="nav_content">
+                <div class="header__burger burger">
+                    <span class="burger__line burger__line_first"></span>
+                    <span class="burger__line burger__line_second"></span>
+                    <span class="burger__line burger__line_third"></span>
+                </div>
+                <div class="logo">
+                    <a href="home.html"><img src="./img/logos/greenlogo2.svg" alt="logo"></a>
+                </div>
+                <div class="nav_links">
+                    <ul class="nav_items">
+                        <a class="burger_menu-logo" href="home.html"><img src="./img/logos/greenlogo2.svg" alt=""></a>
+                        <div class="header__nav-close">
+                            <span class="header__nav-close-line"></span>
+                            <span class="header__nav-close-line"></span>
+                        </div>
+                        <li class="nav_item active"> 
+                            <p class="nav_link has-subnav">О компании <i class="fas fa-chevron-down"></i></p>
+                            <ul class="subnav">
+                                <li>
+                                    <a class="subnav_link" href="company.html">Инфо</a>
+                                </li>
+                                <li>
+                                    <a class="subnav_link" href="identity.html">Айдентика</a>
+                                </li>
+                                <li>
+                                    <a class="subnav_link" href="vacancy.html">Вакансии</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav_item"> 
+                            <a class="nav_link" href="services.html">Услуги</a>
+                        </li>
+                        <li class="nav_item"> 
+                            <a class="nav_link active" href="catalog.html">Каталог товаров</a>
+                        </li>
+                        <li class="nav_item"> 
+                            <a class="nav_link" href="projects.html">Проекты</a>
+                        </li>
+                        <li class="nav_item"> 
+                            <a class="nav_link active" href="blog.html">Блог</a>
+                        </li>
+                        <div class="custom-select-wrapper mobile">
+                            <div class="custom-select">
+                                <div class="custom-select__trigger"><span>Русский <img src="./img/icons/flagrussianicon.png" alt=""></span>
+                                    <div class="arrow"></div>
+                                </div>
+                                <div class="custom-options">
+                                    <span class="custom-option selected" data-value="tesla">Қазақша <img src="./img/icons/flagkzicon.png" alt=""></span>
+                                    <span class="custom-option" data-value="volvo">English<img src="./img/icons/flagukicon.png" alt=""></span>
+                                    <span class="custom-option" data-value="mercedes">Русский <img src="./img/icons/flagrussianicon.png" alt=""></span>
+                                </div>
+                            </div>
+                        </div>
+                    </ul>
+                </div>
+                <div class="nav_baskets">
+                    <div class="nav_baskets-content">
+                        <a class="nav_basket" href="basket.html">
+                            <img src="./img/icons/basketgrey.svg" alt="icon">
+                            <p class="tag basket_nums">1</p>
+                        </a>
+                        <div class="custom-select-wrapper">
+                            <div class="custom-select">
+                                <div class="custom-select__trigger"><span><img src="./img/icons/flagrussianicon.png" alt=""></span>
+                                    <div class="arrow"></div>
+                                </div>
+                                <div class="custom-options">
+                                    <span class="custom-option selected" data-value="kz"><img src="./img/icons/flagkzicon.png" alt=""></span>
+                                    <span class="custom-option" data-value="uk"><img src="./img/icons/flagukicon.png" alt=""></span>
+                                    <span class="custom-option" data-value="rus"><img src="./img/icons/flagrussianicon.png" alt=""></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== NAV END ===== -->
+
+    <!-- ===== BREADCRUMBS LINKS START ===== -->
+
+    <section class="breadcrumbs_links">
+        <div class="container">
+            <div class="breadcrumbs_links-content">
+                <a href="home.html" class="breadcrumbs_links-prev">Главная</a>
+                <span>/</span>
+                <a href="blog.html" class="breadcrumbs_links-active">Корзина товаров</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== BREADCRUMBS LINKS END ===== -->
+
+    <!-- ===== BASKET PAGE START ===== -->
+
+    <section class="basket">
+        <div class="container">
+            <div class="basket_titles">
+                <h2 class="title_h2">Ваша корзина</h2>
+                <a href="catalog.html" class="btn_text">Продолжить покупки</a>
+            </div>
+            <div class="basket_content">
+                <div class="basket_header">
+                    <div class="basket_title">
+                        <p class="suptitle">Товар</p>
+                    </div>
+                    <div class="basket_amounts-title">
+                        <p class="suptitle">Количество</p>
+                    </div>
+                </div>
+                <div class="basket_items">
+                    <div class="basket_catalog_item">
+                        <div class="basket_item">
+                            <div class="basket_item-info">
+                                <div class="basket_item-img">
+                                    <img src="./img/catalogs/catalog1.png" alt="">
+                                </div>
+                                <div class="basket_item-text">
+                                    <div class="basket_item-title">
+                                        <h4 class="card_title">Автоматическая система капельного полива. Для 50 растений </h4>
+                                        <p class="card_text">Артикул THIOKRAFT</p>
+                                    </div>
+                                </div>
+                                <a href="#!" class="basket_info-item-mobile-delet"><img src="./img/icons/basketdeleticon.svg" alt=""></a>
+                            </div>
+                            <div class="basket_amount">
+                                <button class="basket_amount-prev"><p class="paragraph">-</p></button>
+                                <input class="basket_amount-num suptitle" type="text" id="qtyBox" readonly="" value="1">
+                                <button class="basket_amount-next"><p class="paragraph">+</p></button>
+                            </div>
+                            <div class="basket_item-delet">
+                                <a href="#!" class="card_text">Удалить <img src="./img/icons/basketdeleticon.svg" alt=""></a>
+                                <a href="#!" class="basket_item-mobile-delet"><img src="./img/icons/basketdeleticon.svg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="basket_item-line"></div>
+                    </div>
+                    <div class="basket_catalog_item">
+                        <div class="basket_item">
+                            <div class="basket_item-info">
+                                <div class="basket_item-img">
+                                    <img src="./img/catalogs/catalog6.png" alt="">
+                                </div>
+                                <div class="basket_item-text">
+                                    <div class="basket_item-title">
+                                        <h4 class="card_title">Торфонаполнитель горшков IA 2400 / 2500</h4>
+                                        <p class="card_text">Артикул THIOK</p>
+                                    </div>
+                                </div>
+                                <a href="#!" class="basket_info-item-mobile-delet"><img src="./img/icons/basketdeleticon.svg" alt=""></a>
+                            </div>
+                            <div class="basket_amount">
+                                <button class="basket_amount-prev"><p class="paragraph">-</p></button>
+                                <input class="basket_amount-num suptitle" type="text" id="qtyBox" readonly="" value="1">
+                                <button class="basket_amount-next"><p class="paragraph">+</p></button>
+                            </div>
+                            <div class="basket_item-delet">
+                                <a href="#!" class="card_text">Удалить <img src="./img/icons/basketdeleticon.svg" alt=""></a>
+                                <a href="#!" class="basket_item-mobile-delet"><img src="./img/icons/basketdeleticon.svg" alt=""></a>
+                            </div>
+                        </div>
+                        <div class="basket_item-line"></div>
+                    </div>
+                    <div class="basket_checkout-btn">
+                        <a href="catalog.html" class="btn_text">Продолжить покупки</a>
+                        <button data-modal-button="modal-basket-checkout" class="btn_text">Оформить заказ</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="modal-basket-checkout" class="modal hidden" data-modal>
+        <div class="modal_window-mobile-logo">
+            <img src="./img/logos/greenlogo2.svg" alt="">
+        </div>
+        <div class="modal_window-mobile-close">
+            <a class="modal_window-close-btn" data-modal-close href="#!"><img src="./img/icons/closeicon.svg" alt=""></a>
+        </div>
+        <div class="modal_window">
+            <div class="modal_basket-checkout">
+                <div class="modal_window-close">
+                    <a class="modal_window-close-btn" data-modal-close href="#!"><img src="./img/icons/closeicon.svg" alt=""></a>
+                </div>
+                <div class="modal_basket-checkout-content">
+                    <div class="modal_basket-checkout-title">
+                        <h3 class="title_h3">Заполните форму <br> и менеджер с вами свяжется</h3>
+                    </div>
+                    <form class="modal-basket-checkout-form" method="GET">
+                        <div class="modal-basket-chechout-item">
+                            <input class="input_username" type="text" placeholder="Ваше имя">
+                            <div class="input_error-msg">
+                                <div class="error_msg-img">
+                                    <img src="./img/icons/erroricon.svg" alt="">
+                                </div>
+                                <small class="error_msg-text card_text">Error Message</small>
+                            </div>
+                        </div>
+                        <div class="modal-basket-chechout-item">
+                            <input class="input_userphone" type="tel" placeholder="Ваш телефон">
+                            <div class="input_error-msg">
+                                <div class="error_msg-img">
+                                    <img src="./img/icons/erroricon.svg" alt="">
+                                </div>
+                                <small class="error_msg-text card_text">Error Message</small>
+                            </div>
+                        </div>
+                        <p class="card_text">Оставляя данные на сайте, Вы соглашаетесь <br> с <a href="#!">Политикой конфиденциальности</a></p>
+                        <button type="button" class="btn_text basket-checkout-btn">Заказать</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ******* IF the application is accepted ****** -->
+
+    <section id="modal-application-accept" class="modal hidden" data-modal>
+        <div class="modal_window-mobile-logo">
+            <img src="./img/logos/greenlogo2.svg" alt="">
+        </div>
+        <div class="modal_window-mobile-close">
+            <a class="modal_window-close-btn" data-modal-close href="#!"><img src="./img/icons/closeicon.svg" alt=""></a>
+        </div>
+        <div class="modal_window">
+            <div class="modal_application-accept">
+                <div class="modal_window-close">
+                    <a class="modal_window-close-btn" data-modal-close href="#!"><img src="./img/icons/closeicon.svg" alt=""></a>
+                </div>
+                <div class="modal_application-accept-content">
+                    <div class="modal_application-accept-title">
+                        <h3 class="title_h3">Спасибо, <br>Ваша заявка принята!</h3>
+                    </div>
+                    <div class="modal-application-accept-text">
+                        <p class="paragraph">Мы свяжемся с Вами в ближайшее время для подтверждения заказа.</p>
+                    </div>
+                    <div class="mob-modal-btn">
+                        <a class="btn_text" href="home.html">Вернуться на главную</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- ===== BASKET PAGE END ===== -->
+
+    <!-- ===== SIMILAR BASKET PAGE START ===== -->
+
+    <section class="similar_basket">
+        <div class="container">
+            <div class="similar_basket-title">
+                <h2 class="title_h2">Похожие товары</h2>
+            </div>
+            <div class="similar_basket-content">
+                <div class="catalog_main-items">
+                    <a href="#!" class="catalog_main-item">
+                        <div class="catalog_main-item-info">
+                            <div class="catalog_main-item-img">
+                                <img src="./img/catalogs/catalog10.png" alt="">
+                            </div>
+                            <div class="catalog_main-item-text">
+                                <h4 class="card_title">Автоматическая система капельного палива</h4>
+                                <p class="card_text">Рассчитано на стандартную схему посадки</p>
+                            </div>
+                        </div>
+                        <div class="catalog_main-item-btn">
+                            <button class="btn_text">В корзину</button>
+                        </div>
+                    </a>
+                    <a href="#!" class="catalog_main-item">
+                        <div class="catalog_main-item-info">
+                            <div class="catalog_main-item-img">
+                                <img src="./img/catalogs/catalog2.png" alt="">
+                            </div>
+                            <div class="catalog_main-item-text">
+                                <h4 class="card_title">Разгонный вентилятор ACF</h4>
+                                <p class="card_text">Обеспечивает большую эффективность при низком нергопотреблении </p>
+                            </div>
+                        </div>
+                        <div class="catalog_main-item-btn">
+                            <button class="btn_text">В корзину</button>
+                        </div>
+                    </a>
+                    <a href="#!" class="catalog_main-item">
+                        <div class="catalog_main-item-info">
+                            <div class="catalog_main-item-img">
+                                <img src="./img/catalogs/catalog3.png" alt="">
+                            </div>
+                            <div class="catalog_main-item-text">
+                                <h4 class="card_title">Осевой циркуляционный вентилятор FJT</h4>
+                                <p class="card_text">ACF обеспечивает большой объем воздуха и эксплуатационную гибкость.</p>
+                            </div>
+                        </div>
+                        <div class="catalog_main-item-btn">
+                            <button class="btn_text">В корзину</button>
+                        </div>
+                    </a>
+                    <a href="#!" class="catalog_main-item">
+                        <div class="catalog_main-item-info">
+                            <div class="catalog_main-item-img">
+                                <img src="./img/catalogs/catalog11.png" alt="">
+                            </div>
+                            <div class="catalog_main-item-text">
+                                <h4 class="card_title">Торфонаполнитель TR1800</h4>
+                                <p class="card_text">Предназначен для наполнения субстратом RC65, RN12, RT12 и других.</p>
+                            </div>
+                        </div>
+                        <div class="catalog_main-item-btn">
+                            <button class="btn_text">В корзину</button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="similar_basket_slider-container">
+        <div class="swiper_slider-similar_basket swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <a href="#!" class="catalog_main-item">
+                        <div class="catalog_main-item-info">
+                            <div class="catalog_main-item-img">
+                                <img src="./img/catalogs/catalog10.png" alt="">
+                            </div>
+                            <div class="catalog_main-item-text">
+                                <h4 class="card_title">Автоматическая система капельного палива</h4>
+                                <p class="card_text">Рассчитано на стандартную схему посадки</p>
+                            </div>
+                        </div>
+                        <div class="catalog_main-item-btn">
+                            <button class="btn_text">В корзину</button>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#!" class="catalog_main-item">
+                        <div class="catalog_main-item-info">
+                            <div class="catalog_main-item-img">
+                                <img src="./img/catalogs/catalog2.png" alt="">
+                            </div>
+                            <div class="catalog_main-item-text">
+                                <h4 class="card_title">Разгонный вентилятор ACF</h4>
+                                <p class="card_text">Обеспечивает большую эффективность при низком нергопотреблении </p>
+                            </div>
+                        </div>
+                        <div class="catalog_main-item-btn">
+                            <button class="btn_text">В корзину</button>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#!" class="catalog_main-item">
+                        <div class="catalog_main-item-info">
+                            <div class="catalog_main-item-img">
+                                <img src="./img/catalogs/catalog3.png" alt="">
+                            </div>
+                            <div class="catalog_main-item-text">
+                                <h4 class="card_title">Осевой циркуляционный вентилятор FJT</h4>
+                                <p class="card_text">ACF обеспечивает большой объем воздуха и эксплуатационную гибкость.</p>
+                            </div>
+                        </div>
+                        <div class="catalog_main-item-btn">
+                            <button class="btn_text">В корзину</button>
+                        </div>
+                    </a>
+                </div>
+                <div class="swiper-slide">
+                    <a href="#!" class="catalog_main-item">
+                        <div class="catalog_main-item-info">
+                            <div class="catalog_main-item-img">
+                                <img src="./img/catalogs/catalog11.png" alt="">
+                            </div>
+                            <div class="catalog_main-item-text">
+                                <h4 class="card_title">Торфонаполнитель TR1800</h4>
+                                <p class="card_text">Предназначен для наполнения субстратом RC65, RN12, RT12 и других.</p>
+                            </div>
+                        </div>
+                        <div class="catalog_main-item-btn">
+                            <button class="btn_text">В корзину</button>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="swiper_slider-btn-arrows">
+            <button class="swiper-button-prev"><img src="./img/icons/sliderarrowleft.svg" alt=""></button>
+            <button class="swiper-button-next"><img src="./img/icons/sliderarrowright.svg" alt=""></button>
+        </div>
+    </div>
+
+    <!-- ===== SIMILAR BASKET PAGE END ===== -->
+
+    <!-- ===== FOOTER START ===== -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer_content">
+                <div class="footer_info">
+                    <a href="home.html"><img src="./img/logos/greenlogo2.svg" alt="logo"></a>
+                    <p class="navigation">Cтроим теплицы от идеи до реализации. Используем последние технологии и свои материалы. Сопроваждаем и помогаем развивать Ваш бизнес.</p>
+                </div>
+                <div class="footer_items">
+                    <div class="footer_item">
+                        <div class="footer_item-title">
+                            <h4>О компании</h4>
+                        </div>
+                        <div class="footer_item-links">
+                            <a class="navigation" href="company.html">Инфо</a>
+                            <a class="navigation" href="identity.html">Айдентика</a>
+                            <a class="navigation" href="vacancy.html">Вакансии</a>
+                            <a class="navigation" href="home.html#contacts">Контакты</a>
+                        </div>
+                    </div>
+                    <div class="footer_item">
+                        <div class="footer_item-title">
+                            <h4>Услуги</h4>
+                        </div>
+                        <div class="footer_item-links">
+                            <a class="navigation" href="services.html">Этапы постройки</a>
+                            <a class="navigation" href="services.html">Виды услуг</a>
+                            <a class="navigation active" href="catalog.html">Каталог товаров</a>
+                        </div>
+                    </div>
+                    <div class="footer_item">
+                        <div class="footer_item-title">
+                            <h4>Проекты</h4>
+                        </div>
+                        <div class="footer_item-links">
+                            <a class="navigation" href="projects.html">Каталог товаров</a>
+                            <a class="navigation" href="projects.html">Обзор проектов </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="footer_bottom-content">
+                <div class="footer_security"><p>©2021  Bio Retail. Все права защищены.</p></div>
+                <div class="footer_bottom-socials">
+                    <a href="#!"><img src="./img/icons/facebookicon.svg" alt=""></a>
+                    <a href="#!"><img src="./img/icons/instagramicon.svg" alt=""></a>
+                    <a href="#!"><img src="./img/icons/inicon.svg" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== FOOTER END ===== -->
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

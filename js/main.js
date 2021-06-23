@@ -353,23 +353,24 @@ new Swiper('.mobile_projects-map_info-swiper-slider', {
     slidesPerView: 1.2,
     centeredSlides: true,
     spaceBetween: 31,
-    breakpoints: {
-        330: {
-            slidesPerView: 1.4,
-        },
-        360: {
-            slidesPerView: 1.6,
-        },
-        415: {
-            slidesPerView: 1.8,
-        },
-        460: {
-            slidesPerView: 2,
-        },
-        500: {
-            slidesPerView: 2.2,
-        },
-    },
+    slidesPerView: 'auto',
+    // breakpoints: {
+    //     330: {
+    //         slidesPerView: 1.4,
+    //     },
+    //     360: {
+    //         slidesPerView: 1.6,
+    //     },
+    //     415: {
+    //         slidesPerView: 1.8,
+    //     },
+    //     460: {
+    //         slidesPerView: 2,
+    //     },
+    //     500: {
+    //         slidesPerView: 2.2,
+    //     },
+    // },
     thumbs: {
         swiper: {
             el: '.mobile_projects-swiper-slider',
@@ -379,10 +380,6 @@ new Swiper('.mobile_projects-map_info-swiper-slider', {
     },
 })
 // vacancy slider
-
-const vacancySlider = 3;
-const vacancySwiperSliderArrows = document.querySelector('.vacancy-slider .swiper_slider-btn-arrows');
-const vacancySwiperWrapper = document.querySelector('.swiper_slider-vacancy .swiper-wrapper')
 
 let vacancy = new Swiper('.swiper_slider-vacancy',{
     slidesPerView: 1,
@@ -408,10 +405,6 @@ let vacancy = new Swiper('.swiper_slider-vacancy',{
 });
 
 // company slider
-
-const companyTeamSlider = 3;
-const CompanySwiperSliderBtnArrows = document.querySelector('.company_team-slider-container > .swiper_slider-btn-arrows');
-const CompanySwiperWrapper = document.querySelector('.swiper_slider-company_team > .swiper-wrapper');
 
 let companyteam = new Swiper ('.swiper_slider-company_team',{
     slidesPerView: 1,

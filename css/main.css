@@ -504,6 +504,8 @@ h1, h2, h3, h4, h5, h6{
 
 .home_work-video img{
     width: 100%;
+    border-radius: 8px;
+    object-fit: cover;
 }
 
 .home_services{
@@ -1341,6 +1343,14 @@ h1, h2, h3, h4, h5, h6{
     padding: 24px 8px 16px 16px;
     width: 223px;
     z-index: 10;
+}
+
+.mobile_projects .swiper-slide{
+    width: auto;
+}
+
+.mobile_projects .swiper-slide:nth-child(8) .projects-map-locations-content{
+    width: 250px;
 }
 
 .mobile_projects .projects-map-locations-content .title_h3{
@@ -6923,6 +6933,10 @@ h1, h2, h3, h4, h5, h6{
         width: 90%;
     }
 
+    .home_work-video img{
+        height: 260px;
+    }
+
     .modal_application-accept{
         width: 100%;
         height: auto;
@@ -7960,6 +7974,15 @@ h1, h2, h3, h4, h5, h6{
 @media screen and (max-width: 450px){
     .footer_info {
         width: 86.3%;
+    }
+
+    .home_work-video img{
+        height: 200px;
+    }
+
+    .finalresult_video img{
+        height: 200px;
+        object-fit: cover;
     }
 
     .projects_header-info {

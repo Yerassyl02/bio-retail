@@ -218,7 +218,7 @@ if(basketCheckoutBtn){
     });
 }
 
-
+// #### start
 function onSuccess(input){
     let parent=input.parentElement;
     let messageEle=parent.querySelector(".error_msg-text");
@@ -238,9 +238,29 @@ function onError(input,message){
     parent.classList.add("input_error");
     parent.classList.remove("success");
 }
+// #### end
 
 // slider
 
+// #### start projects marker hover
+
+const projectsMapLocations = document.querySelectorAll('.projects-map-locations');
+
+for(let i = 0; i < projectsMapLocations.length; i++){
+    projectsMapLocations[i].addEventListener('mouseover', () => {
+        projectsMapLocations[i].classList.add('active');
+        projectsMapLocations[0].classList.remove('active');
+    })
+    projectsMapLocations[0].addEventListener('mouseover', () => {
+        projectsMapLocations[0].classList.add('active');
+    })
+    projectsMapLocations[i].addEventListener('mouseout', () =>{
+        projectsMapLocations[i].classList.remove('active');
+        projectsMapLocations[0].classList.add('active');
+    })
+}
+
+// #### end projects marker hover
 // projects slider
 
 new Swiper('.projects-done-content-swiper-slider', {
@@ -267,7 +287,7 @@ new Swiper('.swiper-usinglogo', {
 });
 
 // home slider
-
+// #### start
 new Swiper('.swiper_slider-similar_home_galleries',{
     slidesPerView: 3,
     autoHeight: true,
@@ -303,7 +323,7 @@ new Swiper('.swiper_slider-similar_home_galleries',{
         }
     }
 });
-
+// #### end
 // blog slider
 
 new Swiper('.swiper_slider-blog',{
@@ -335,6 +355,7 @@ new Swiper('.swiper_slider-similar_basket',{
 
 // catalog pages slider
 
+// #### start
 new Swiper('.catalog_pages-item-swiper-slider',{
     navigation: {
         nextEl: '.swiper-button-next',
@@ -344,10 +365,11 @@ new Swiper('.catalog_pages-item-swiper-slider',{
         swiper: {
             el: '.catalog_pages-item-mini-slider',
             slidesPerView: 4,
-            touchRatio: 0
+            spaceBetween: 16,
         }
     },
 });
+// #### end
 
 new Swiper('.mobile_projects-map_info-swiper-slider', {
     slidesPerView: 1.2,
@@ -380,10 +402,11 @@ new Swiper('.mobile_projects-map_info-swiper-slider', {
     },
 })
 // vacancy slider
-
+// #### start
 let vacancy = new Swiper('.swiper_slider-vacancy',{
     slidesPerView: 1,
     spaceBetween: 32,
+    autoHeight: true,
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev'
@@ -403,9 +426,9 @@ let vacancy = new Swiper('.swiper_slider-vacancy',{
         },
     }
 });
-
+// #### end
 // company slider
-
+// #### start
 let companyteam = new Swiper ('.swiper_slider-company_team',{
     slidesPerView: 1,
     spaceBetween: 32,
@@ -429,3 +452,4 @@ let companyteam = new Swiper ('.swiper_slider-company_team',{
         }
     }
 });
+// #### end
